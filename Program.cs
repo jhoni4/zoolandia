@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Text;
-using Zoolandia.Species;
+using Zoolandia.Animals;
 
 namespace zoolandia
 {
@@ -16,7 +15,33 @@ namespace zoolandia
                Legs=4,
                Sound="miaoow"
            };
-           mycat.inform();
+
+           Dog mydog = new Dog() {
+               Name= "bobi",
+               SpeciesName="dogiieooo",
+               Wings=false,
+               Legs=4,
+               Sound="woow"
+           };
+           Hen myhen = new Hen() {
+               Name= "kuku",
+               SpeciesName="kukiieooo",
+               Wings=true,
+               Legs=2,
+               Sound="kukuluku"
+           };
+           Horse myhorse = new Horse() {
+               Name= "koko",
+               SpeciesName="horsieooo",
+               Wings=false,
+               Legs=4,
+               Sound="wieeee"
+           };
+           mycat.process();
+           mydog.process();
+           myhen.process();
+           myhorse.process();
+           
         }
     }
 }

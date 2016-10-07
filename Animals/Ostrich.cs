@@ -4,10 +4,10 @@ using Zoolandia.Genus;
 
 namespace Zoolandia.Animals
 {
-    class Hen: Amphibian
+    class Ostich: Amphibian
     {
-        public Hen(string nickname, int legs) {
-               this.commonname= "hen";
+        public Ostich(string nickname, int legs) {
+               this.commonname= "Ostich";
                this.scientificName="kukiieooo";
                this.Wings=true;
                this.Sound="kukuluku";

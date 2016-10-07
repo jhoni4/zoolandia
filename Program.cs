@@ -7,15 +7,18 @@ namespace zoolandia
     public class Program
     {
         public static void Main(string[] args) {
-           Cat mycat = new Cat("kit");
-           Dog mydog = new Dog("bob");
+           Cat mycat = new Cat("kit", false);
+           Dog mydog = new Dog("bob", false);
            Hen myhen = new Hen("ku", 2);
-           Horse myhorse = new Horse("ho");
+           Lion mylion = new Lion("ho", true);
+           Eagle myeagle = new Eagle("ho", 2);
            mycat.process();
+           mycat.process("bibi");
            mydog.process();
            myhen.process();
-           myhorse.process();
-        //    Animal.legCount("yona", 1000);
+           mylion.process();
+           myeagle.process();
+        //    mycat.legCount("yona", 1000);
            
         }
     }

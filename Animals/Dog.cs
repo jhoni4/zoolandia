@@ -1,21 +1,24 @@
 using System;
+using Zoolandia.Genus;
+
 
 namespace Zoolandia.Animals
 {
-    class Dog: Animal
+    class Dog: Mammalia
     {
-        public Dog(string nickname, int legs = 4) {
-               Name= "bobi";
-               SpeciesName="dogiieooo";
-               Wings=false;
-               Sound="woow";
+        public Dog(string nickname, bool wild) {
+               this.commonname= "dog";
+               this.scientificName="dogiieooo";
+               this.Domestic=wild;
+               this.Sound="woow";
            }
         public override string sleep() {
           return "it sleeps by lying down.";
         }
-         public void process() {
-              Console.WriteLine($"I have a Dog named {this.Name} of Species Name {this.SpeciesName} \n who makes a noise that sounds like {this.Sound}.\n {this.sleep()} ");
-            }
+        public override string breastfeed() {
+          return "they do breastfeed but never seen them.";
+        }
+       
 
 
     }

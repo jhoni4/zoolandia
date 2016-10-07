@@ -2,9 +2,14 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    public class Dog: Animal
+    class Dog: Animal
     {
-        public Dog() {}
+        public Dog(string nickname, int legs = 4) {
+               Name= "bobi";
+               SpeciesName="dogiieooo";
+               Wings=false;
+               Sound="woow";
+           }
         public override string sleep() {
           return "it sleeps by lying down.";
         }

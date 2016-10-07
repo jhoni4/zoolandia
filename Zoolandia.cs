@@ -1,6 +1,6 @@
 using System;
 
-namespace Zoolandia
+namespace Zoolandia.Animals
 {
     public class Animal
     {
@@ -10,7 +10,15 @@ namespace Zoolandia
         public virtual int Legs { get; set; }
         public virtual string Sound { get; set; }
         public virtual string sleep () {
-            return "they all sleeps";
+            return "they sleeps";
+        }
+         public void legCount(string nickname)
+        {
+            Console.WriteLine($"Has 4 number of legs");
+        }
+        public void legCount(string nickname, int legs)
+        {
+            Console.WriteLine($"Has {legs} number of legs");
         }
         
     }

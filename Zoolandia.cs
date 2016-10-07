@@ -1,8 +1,8 @@
 using System;
 
-namespace Zoolandia
+namespace Zoolandia.Animals
 {
-    public class Animal
+    class Animal
     {
         public virtual string SpeciesName { get; set; }
         public string Name { get; set; }

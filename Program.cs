@@ -1,22 +1,41 @@
 ﻿using System;
-using System.Text;
-using Zoolandia.Species;
+using Zoolandia.Animals;
 
 namespace zoolandia
 {
     public class Program
     {
         public static void Main(string[] args) {
-            // Animal firstAnimal = new Animal();
-            // firstAnimal.name = args[0].Split(new Char[] { ' ' })[0];
            Cat mycat = new Cat() {
                Name= "kitty",
                SpeciesName="cateooo",
-               Wings=false,
                Legs=4,
                Sound="miaoow"
            };
-           mycat.inform();
+           Dog mydog = new Dog() {
+               Name= "boby",
+               SpeciesName="dogiieeeooo",
+               Legs=4,
+               Sound="wofff"
+           };
+           Hen myhen = new Hen() {
+               Name= "kuku",
+               SpeciesName="henieooo",
+               Legs=2,
+               Sound="kukulu"
+           };
+           Horse myhorse = new Horse() {
+               Name= "koko",
+               SpeciesName="kokieooo",
+               Legs=4,
+               Sound="wiieee"
+           };
+           Console.WriteLine(mycat.inform());
+           Console.WriteLine(mydog.inform());
+           Console.WriteLine(myhen.inform());
+           Console.WriteLine(myhorse.inform());
+           
+           
         }
     }
 }

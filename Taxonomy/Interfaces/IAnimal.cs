@@ -2,9 +2,9 @@ namespace Zoolandia.Animals
 {
     interface IAnimal
     {
-        void eat();
-        void eat(string food);
-        void sleep();
-        void Reproduce();
+        void legCount(string nickname, int legs);
+        void process();
+        void legCount(string nickname);
+        
     }
 }

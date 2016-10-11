@@ -3,16 +3,16 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    public class Mammalia : Genus
+    public class Mammalia : Genus, IAmbulatory
     {
           //  public Mammalia genus = new Mammalia();
 
-      public Mammalia() {
+       public Mammalia() {
             this.url= "https://en.wikipedia.org/wiki/Mammalia";
             this.feed="they breastfeed their young";
             this.Reproduce="since they are Mammals they give birth to live young.";
             this.genusName ="Mammalia";
-      }
+       }
         public virtual string sleepWay() {
           return "They sleeps by lying down";
         }

@@ -3,7 +3,7 @@ using System;
 
 namespace Zoolandia.Animals
 {
-    public class Amphibian : Genus
+    public class Amphibian : Genus, IFlying
     {
       public Amphibian() {
             this.url= "https://en.wikipedia.org/wiki/Amphibian";
@@ -24,7 +24,14 @@ namespace Zoolandia.Animals
         
         // }
 
-
+          public virtual string canFly(bool flying) {
+            if (flying) {
+                return "it has wings and they can fly";
+            }
+            else {
+                return "it has wings but they can not fly.";
+            }
+        }  
 
 
 
@@ -53,13 +60,6 @@ namespace Zoolandia.Animals
         //     }
         // }
        
-        // public virtual string canFly(bool flying) {
-        //     if (this.flying) {
-        //         return "it has wings and they can fly";
-        //     }
-        //     else {
-        //         return "it has wings but they can not fly.";
-        //     }
-        // }   
+       
         
 

@@ -2,7 +2,9 @@ namespace Zoolandia.Animals
 {
     interface IAmbulatory
     {
-        void walk();
-        double groundSpeed { get; set; }
+        void process(string name);
+        string sleepWay();
+        
+        // double groundSpeed { get; set; }
     }
 }

@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia.Animals
 {
-   public class Animal
+   public class Animal : IAnimal
     {
         public string scientificName { get; set; }
         public string commonName { get; set; }
@@ -18,9 +18,9 @@ namespace Zoolandia.Animals
         public string Reproduce { get; set; }
         public string Sound { get; set; }
         public virtual string genusName { get; set; }
-        public string sleep (bool sleeping){
-          return sleeping ? "is now sleeping" : "is awake now";
-        }
+        // public sleep (bool sleeping){
+        //   return sleeping ? "is now sleeping" : "is awake now";
+        // }
         private string _nickname = null;
         public string nickname{
             get{
@@ -57,6 +57,14 @@ namespace Zoolandia.Animals
               and {this.genus.feed} Also {this.genus.Reproduce}
               link of {this.genus.url}");
         }
+
+        
+        public void legCount(string nickname) {
+            Console.WriteLine($"{nickname} Has 4 number of legs");
+        }
+        public void legCount(string nickname, int legs) {
+            Console.WriteLine($"{nickname} Has {legs} number of legs");
+        }
         
     }
 }    
@@ -67,12 +75,8 @@ namespace Zoolandia.Animals
 
 
 
-        // public void legCount(string nickname) {
-        //     Console.WriteLine($"{nickname} Has 4 number of legs");
-        // }
-        // public void legCount(string nickname, int legs) {
-        //     Console.WriteLine($"{nickname} Has {legs} number of legs");
-        // }
+        
+        // 
         // private string _genusName;
         // public string genusName
         // {

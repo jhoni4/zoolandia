@@ -1,26 +1,53 @@
-using System;
+﻿using System;
+using Zoolandia.Animals;
 
-namespace Zoolandia.Animals
+
+namespace zoolandia
 {
-   public class Animal
+    public class Program
     {
-        public string scientificName { get; set; }
-        public string commonname { get; set; }
-        public bool Wings { get; set; }
-        public bool Domestic { get; set; }
-        public int Legs { get; set; }
-        public string Sound { get; set; }
-        public virtual string sleep () {
-            return "they sleeps";
-        }
-        public void legCount(string nickname)
+        public static void Main(string[] args) 
         {
-            Console.WriteLine($"Has 4 number of legs");
+           Cat mycat = new Cat("kiki", 15) {
+               genus = new Mammalia() 
+           };
+        //    Console.WriteLine(mycat.genus.genusName);
+           Dog mydog = new Dog("bob", false, 10) {
+               genus = new Mammalia()
+           };
+           Hen myhen = new Hen("ku", false) {
+               genus = new Amphibian()
+           };
+           Lion mylion = new Lion("ho", true) {
+               genus = new Mammalia()
+           };
+           Eagle myeagle = new Eagle("lulu", true) {
+               genus = new Amphibian()
+           };
+           Ostich myostich = new Ostich("kumo", true) {
+               genus = new Amphibian()
+           };
+           
+
+
+           Console.WriteLine("Here are my zoolandia collection of animals");
+           mycat.process();
+           mydog.process();
+           myhen.process();
+           mylion.process();
+           myeagle.process();
+           myeagle.process();
+           myostich.process();
+           
+        //    mycat.genus.process();
+        //    mycat.process("chichi", 11);
+          //  mydog.legCount("lucy");
+          //  mycat.process("bibi");
+          //  mydog.process("bibi", 26);
+          //  mydog.legCount("yona", 3);
+          //  Console.WriteLine("cats walks by " + Cat.walk);
+           
+           
         }
-        public void legCount(string nickname, int legs)
-        {
-            Console.WriteLine($"Has {legs} number of legs");
-        }
-        
     }
-}    
+}

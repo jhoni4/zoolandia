@@ -49,7 +49,7 @@ namespace Zoolandia.Animals
         }
 
          public void process(){
-              Console.WriteLine($@"Hello I have a {this.commonName} 
+              Console.WriteLine($@"I have a {this.commonName} 
               named {this.nickname}, weighs {this.weighs}lb
               Scientific Name of {this.scientificName} 
               Genus Name of {this.genus.genusName} 
@@ -58,7 +58,7 @@ namespace Zoolandia.Animals
               link of {this.genus.url}");
         }
 
-        
+
         public void legCount(string nickname) {
             Console.WriteLine($"{nickname} Has 4 number of legs");
         }

@@ -30,7 +30,7 @@ namespace zoolandia
            
 
 
-           Console.WriteLine("Here are my zoolandia collection of animals");
+           Console.WriteLine("Here are my zoolandia collection of animals \n===================================");
            mycat.process();
            mydog.process();
            myhen.process();

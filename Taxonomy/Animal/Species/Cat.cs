@@ -1,7 +1,8 @@
 using System;
+using Zoolandia;
 
 
-namespace Zoolandia.Animals
+namespace Zoolandia
 {
    public class Cat: Animal
     {
@@ -11,10 +12,12 @@ namespace Zoolandia.Animals
            this.scientificName = "catieeo";
            this.weighs=weigh;
            this.sound="miaww";
-        //    this.genus = new Mammalia();
+           this.genus = new Mammalia();
        } 
        
+
        public string walk= "walking";
+       
 
 
 

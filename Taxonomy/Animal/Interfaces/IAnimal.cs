@@ -1,9 +1,8 @@
-namespace Zoolandia.Animals
+namespace Zoolandia
 {
     interface IAnimal
     {
         void legCount(string nickname, int legs);
-        void process();
         void legCount(string nickname);
         
     }

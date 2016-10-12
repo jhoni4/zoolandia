@@ -1,7 +1,9 @@
 using System;
+using Zoolandia;
 
 
-namespace Zoolandia.Animals
+
+namespace Zoolandia
 {
     class Dog: Animal
     {
@@ -9,10 +11,12 @@ namespace Zoolandia.Animals
               this.commonName= "dog";
               this.nickname = nickname;
               this.scientificName="dogiieooo";
-              this.Domestic=true;
               this.sound="wooff";
               this.weighs=weigh;
+              this.genus = new Mammalia();
            }
+
+
         // public override string sleep() {
         //   return "it sleeps by lying down.";
         // }

@@ -1,4 +1,4 @@
-namespace Zoolandia.Animals
+namespace Zoolandia
 {
     interface IAmbulatory
     {

@@ -1,7 +1,7 @@
 using System;
 
 
-namespace Zoolandia.Animals
+namespace Zoolandia
 {
     class Eagle: Animal
     {
@@ -11,7 +11,10 @@ namespace Zoolandia.Animals
                this.scientificName="Eaglieooo";
                this.flying=true;
                this.sound="ikiki";
-           }
+               this.genus = new Amphibian();
+        }
+        // public Genus genus= new Amphibian();
+
         // public override string sleep() {
         //   return "it sleeps by siting down.";
         // }

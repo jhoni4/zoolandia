@@ -1,7 +1,7 @@
 using System;
 
 
-namespace Zoolandia.Animals
+namespace Zoolandia
 {
     public class Amphibian : Genus, IFlying
     {
@@ -15,14 +15,6 @@ namespace Zoolandia.Animals
         public virtual string sleepWay() {
           return "They sleeps by siting down";
         }
-        // public void process() { 
-        //     Console.WriteLine($@"Hey I have a {this.commonName} named {this.nickname}
-        //     of Species Name {this.scientificName},
-        //     Genus Name of {this.genusName}, 
-        //     who makes a noise that sounds like {this.sound}
-        //     {this.sleepWay()} and {this.Reproduce} ");
-        
-        // }
 
           public virtual string canFly(bool flying) {
             if (flying) {
@@ -45,20 +37,7 @@ namespace Zoolandia.Animals
 
 
 
-    //   public Amphibian() {
-    //     this.init();
-    //   }
-    //    public Amphibian(string nickname, double weighs, string foods) {
-    //        this.init();
-    //        this.nickname = nickname;
-    //        this.weight= weighs;
-    //        this.food=foods;
-    //    }
-        // public override string genusName { 
-        //     get {
-        //         return "amphibian";
-        //     }
-        // }
+
        
        
         

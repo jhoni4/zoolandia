@@ -1,12 +1,14 @@
 using System;
+using Zoolandia;
 
-namespace Zoolandia.Animals
+namespace Zoolandia
 {
-   public class Animal : IAnimal
+   public class Animal 
     {
         public string scientificName { get; set; }
         public string commonName { get; set; }
         public string url { get; set; }
+        public string Habitat { get; set; }
         public double weight { get; set; }
         public bool Wings { get; set; }
         public bool IsSleeping { get; set; }
@@ -17,6 +19,8 @@ namespace Zoolandia.Animals
         public string feed { get; set; }
         public string Reproduce { get; set; }
         public string Sound { get; set; }
+        public string Genus { get; set; }
+        
         public virtual string genusName { get; set; }
         // public sleep (bool sleeping){
         //   return sleeping ? "is now sleeping" : "is awake now";
@@ -48,15 +52,15 @@ namespace Zoolandia.Animals
             }
         }
 
-         public void process(){
-              Console.WriteLine($@"I have a {this.commonName} 
-              named {this.nickname}, weighs {this.weighs}lb
-              Scientific Name of {this.scientificName} 
-              Genus Name of {this.genus.genusName} 
-              who makes a noise that sounds like {this.sound}.
-              and {this.genus.feed} Also {this.genus.Reproduce}
-              link of {this.genus.url}");
-        }
+        //  public void process(){
+        //       Console.WriteLine($@"I have a {this.commonName} 
+        //       named {this.nickname}, weighs {this.weighs}lb
+        //       Scientific Name of {this.scientificName} 
+        //       Genus Name of {this.genus.genusName} 
+        //       who makes a noise that sounds like {this.sound}.
+        //       and {this.genus.feed} Also {this.genus.Reproduce}
+        //       link of {this.genus.url}");
+        // }
 
 
         public void legCount(string nickname) {

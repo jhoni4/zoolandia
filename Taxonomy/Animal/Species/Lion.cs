@@ -1,6 +1,6 @@
+using System;
 
-
-namespace Zoolandia.Animals
+namespace Zoolandia
 {
    public class Lion: Animal
     {
@@ -10,7 +10,9 @@ namespace Zoolandia.Animals
                this.scientificName="Lionieooo";
                this.Domestic=false;
                this.sound="brbrbr";
-           }
+               this.genus = new Mammalia();
+        }
+        // public Genus genus= new Mammalia();
         // public override string sleep() {
         //   return "it sleeps lying down.";
         // }

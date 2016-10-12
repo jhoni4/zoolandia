@@ -1,7 +1,9 @@
 using System;
 
 
-namespace Zoolandia.Animals
+
+
+namespace Zoolandia
 {
     class Ostich: Animal
     {
@@ -11,7 +13,10 @@ namespace Zoolandia.Animals
                this.scientificName="kukiieooo";
                this.flying=false;
                this.sound="kukuluku";
-           }
+               this.genus = new Amphibian();
+
+        }
+        // public Genus genus= new Amphibian();
         // public override string sleep() {
         //   return "it sleeps by siting down.";
         // }

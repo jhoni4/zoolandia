@@ -1,11 +1,10 @@
 using System;
 
 
-namespace Zoolandia.Animals
+namespace Zoolandia
 {
     public class Mammalia : Genus, IAmbulatory
     {
-          //  public Mammalia genus = new Mammalia();
 
        public Mammalia() {
             this.url= "https://en.wikipedia.org/wiki/Mammalia";
@@ -34,29 +33,4 @@ namespace Zoolandia.Animals
 
 
 
-      // public Mammalia() {
-      //   this.init();
-      // }
-      //  public Mammalia(string nickname, double weighs) {
-      //      this.init();
-      //      this.nickname = nickname;
-      //      this.weight= weighs;
-      //  }
-      //   overriding
-      //   public override string genusName { 
-      //       get {
-      //           return "Mammalia";
-      //       }
-      //   }
-
-
-
-      //   public void process(){
-      //          Console.WriteLine($@"Hi I have a {this.commonName} 
-      //         named {this.nickname}, weighs {this.weighs}
-      //         Scientific Name of {this.scientificName} 
-      //         Genus Name of {this.genusName} 
-      //         who makes a noise that sounds like {this.sound}.
-      //         {this.sleepWay()} and {this.feed} 
-      //         Also {this.Reproduce}");
-      //   }
+      

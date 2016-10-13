@@ -3,7 +3,7 @@ using Zoolandia;
 
 namespace Zoolandia
 {
-   public class Animal 
+   public class Animal : IAnimal
     {
         public string scientificName { get; set; }
         public string commonName { get; set; }
@@ -37,8 +37,9 @@ namespace Zoolandia
                 }
             }
         }
-        public string food{ get; set; }
-        
+        // public string food{ get; set; }
+        // public string sleepWay{ get; set; }
+        public int legs{ get; set; }
         private int _weighs;
         public int weighs{
             get{
@@ -51,20 +52,10 @@ namespace Zoolandia
                 }
             }
         }
-
-        //  public void process(){
-        //       Console.WriteLine($@"I have a {this.commonName} 
-        //       named {this.nickname}, weighs {this.weighs}lb
-        //       Scientific Name of {this.scientificName} 
-        //       Genus Name of {this.genus.genusName} 
-        //       who makes a noise that sounds like {this.sound}.
-        //       and {this.genus.feed} Also {this.genus.Reproduce}
-        //       link of {this.genus.url}");
-        // }
-
-
-        public void legCount(string nickname) {
-            Console.WriteLine($"{nickname} Has 4 number of legs");
+        public virtual void sleepWay() {}
+        public virtual void food() {}
+        public string legCount(string nickname) {
+            return ($"{nickname} Has 4 number of legs");
         }
         public void legCount(string nickname, int legs) {
             Console.WriteLine($"{nickname} Has {legs} number of legs");
@@ -72,24 +63,3 @@ namespace Zoolandia
         
     }
 }    
-
-
-
-
-
-
-
-        
-        // 
-        // private string _genusName;
-        // public string genusName
-        // {
-        //     get
-        //     {
-        //         return _genusName;
-        //     }
-        //     set
-        //     {
-        //         _genusName = value;
-        //     }
-        // }

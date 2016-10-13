@@ -36,16 +36,19 @@ namespace Zoolandia
            wild.inhabitants.Add(lion1);
            wild.inhabitants.Add(eagle1);
            wild.inhabitants.Add(ostich1);
+           
 
            // Output the habitats in our Zoo
-      Console.WriteLine($"\nHabitats in `{zoolandia.marketingReport()}`\n===================================");
+      Console.WriteLine($"\nHABITATS in `{zoolandia.process()}`\n===================================");
       foreach(Habitat habitat in zoolandia.habitats)
       {
         Console.WriteLine($"\n{habitat.homeName}\nAnimals in this habitat:");
         foreach (Animal a in habitat.inhabitants)
         {
-          Console.WriteLine($@"  My friend {a.nickname}  its a {a.commonName} with scientific Name of {a.scientificName}
+          Console.WriteLine($@"  My friend {a.nickname} with {a.legCount(a.nickname)}  its a {a.commonName} with scientific Name of {a.scientificName}
           which makes a noise that sounds like {a.sound}, Also {a.genus.Reproduce} and {a.genus.feed} if needed More info: {a.genus.url}.");
+          a.sleepWay();
+          a.sleepWay();
         }
       }
            

@@ -9,7 +9,7 @@ namespace Zoolandia
     
     public List<Habitat> habitats = new List<Habitat>();
     
-    public string marketingReport ()
+    public string process ()
     {
       return "The amazing " + _name;
     }

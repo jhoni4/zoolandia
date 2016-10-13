@@ -10,6 +10,7 @@ namespace Zoolandia
         public Dog(string nickname, bool wild, int weigh) {
               this.commonName= "dog";
               this.nickname = nickname;
+              this.legs = 4;
               this.scientificName="dogiieooo";
               this.sound="wooff";
               this.weighs=weigh;
@@ -17,12 +18,12 @@ namespace Zoolandia
            }
 
 
-        // public override string sleep() {
-        //   return "it sleeps by lying down.";
-        // }
-        // public override string feed() {
-        //   return "they do breastfeed but never seen them.";
-        // }
+        public override void sleepWay() {
+           Console.WriteLine("it sleeps by lying down.");
+        }
+        public override void food() {
+          Console.WriteLine("usually they eat meat.");
+        }
        
 
 

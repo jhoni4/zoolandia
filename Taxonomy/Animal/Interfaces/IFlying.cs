@@ -5,6 +5,5 @@ namespace Zoolandia
          string  canFly(bool flying);
          string  sleepWay();
          
-        // double airSpeed { get; set; }
     }
 }

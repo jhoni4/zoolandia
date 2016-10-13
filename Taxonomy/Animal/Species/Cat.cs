@@ -9,6 +9,7 @@ namespace Zoolandia
        public Cat(string nickname, int weigh) {
            this.commonName = "cat";
            this.nickname = nickname;
+           this.legs = 4;
            this.scientificName = "catieeo";
            this.weighs=weigh;
            this.sound="miaww";
@@ -18,6 +19,13 @@ namespace Zoolandia
 
        public string walk= "walking";
        
+        public override void sleepWay() {
+          Console.WriteLine("it sleeps by lying down.");
+        }
+         public override void food() {
+          Console.WriteLine("usually they drink milk.");
+        }
+        
 
 
 
@@ -44,11 +52,5 @@ namespace Zoolandia
         //     get{
         //         return _age;
         //     }
-        // }
-        // public override string sleepWay() {
-        //   return "it sleeps by lying down.";
-        // }
-        // public override string feed() {
-        //   return "they do breastfeed.";
         // }
          

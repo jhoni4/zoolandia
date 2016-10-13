@@ -6,7 +6,7 @@ namespace Zoolandia
 {
    public class Cat: Animal
     {
-       public Cat(string nickname, int weigh) {
+       public Cat(string nickname, int weigh, int legs) {
            this.commonName = "cat";
            this.nickname = nickname;
            this.legs = 4;

@@ -10,14 +10,14 @@ namespace Zoolandia
     {
         public static void Main(string[] args) 
         {
-           Cat cat1 = new Cat("kiki", 15) { 
+           Cat cat1 = new Cat("kiki", 15, 4) { 
            };
         //    Console.WriteLine(cat1.genus.genusName);
-           Dog dog1 = new Dog("bob", false, 10);
-           Hen hen1 = new Hen("ku", false);
-           Lion lion1 = new Lion("ho", true);
-           Eagle eagle1 = new Eagle("lulu", true);
-           Ostich ostich1 = new Ostich("kumo", true);
+           Dog dog1 = new Dog("Bob", false, 10, 4);
+           Hen hen1 = new Hen("ku", false, 2);
+           Lion lion1 = new Lion("Ho", true, 4);
+           Eagle eagle1 = new Eagle("Lulu", true, 2);
+           Ostich ostich1 = new Ostich("kumo", true, 2);
 
            // Create a Domestic habitat and 
            // Create a Wild habitat 
@@ -39,19 +39,22 @@ namespace Zoolandia
            
 
            // Output the habitats in our Zoo
+      Console.WriteLine("===================================");
+           
       Console.WriteLine($"\nHABITATS in `{zoolandia.process()}`\n===================================");
       foreach(Habitat habitat in zoolandia.habitats)
       {
         Console.WriteLine($"\n{habitat.homeName}\nAnimals in this habitat:");
         foreach (Animal a in habitat.inhabitants)
         {
-          Console.WriteLine($@"  My friend {a.nickname} with {a.legCount(a.nickname)}  its a {a.commonName} with scientific Name of {a.scientificName}
+          Console.WriteLine($@"  Meet My friend {a.nickname} its a {a.commonName} which {a.legCount(a.legs)}   with scientific Name of {a.scientificName}
           which makes a noise that sounds like {a.sound}, Also {a.genus.Reproduce} and {a.genus.feed} if needed More info: {a.genus.url}.");
           a.sleepWay();
-          a.sleepWay();
+          a.genus.canFly(a.flying);
         }
       }
            
+           Console.WriteLine("===================================");
 
            Console.WriteLine("THANK YOU FOR VISITING \n===================================");
            

@@ -7,7 +7,7 @@ namespace Zoolandia
 {
     class Ostich: Animal
     {
-        public Ostich(string nickname, bool flying) {
+        public Ostich(string nickname, bool flying, int legs) {
                this.commonName= "Ostich";
                this.nickname= nickname;
                this.legs = 2;

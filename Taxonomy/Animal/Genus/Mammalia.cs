@@ -12,12 +12,9 @@ namespace Zoolandia
             this.Reproduce="since they are Mammals they give birth to live young.";
             this.genusName ="Mammalia";
        }
-        public virtual string sleepWay() {
-          return "They sleeps by lying down";
-        }
         //overloading
-         public void process(string name) {
-              Console.WriteLine($"I have a {this.commonName} named {name}");
+         public void walky(string commonName) {
+              Console.WriteLine($"{this.commonName} is a good walker");
         }
       //   
 

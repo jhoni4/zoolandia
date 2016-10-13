@@ -11,19 +11,16 @@ namespace Zoolandia
             this.Reproduce="They Reproduce by laying eggs";
             this.genusName="Amphibian";
        }
-       public bool wings=true;
-        public virtual string sleepWay() {
-          return "They sleeps by siting down";
-        }
-
-          public virtual string canFly(bool flying) {
+    //    public bool wings=true;
+         public override void canFly(bool flying) {
             if (flying) {
-                return "it has wings and they can fly";
+                Console.WriteLine("it has wings and they can fly");
             }
             else {
-                return "it has wings but they can not fly.";
+                Console.WriteLine("it has wings but they can not fly.");
             }
-        }  
+        } 
+ 
 
 
 

@@ -9,7 +9,6 @@ namespace Zoolandia
         public string commonName { get; set; }
         public string url { get; set; }
         public string Habitat { get; set; }
-        public double weight { get; set; }
         public bool Wings { get; set; }
         public bool IsSleeping { get; set; }
         public bool flying { get; set; }
@@ -22,9 +21,6 @@ namespace Zoolandia
         public string Genus { get; set; }
         
         public virtual string genusName { get; set; }
-        // public sleep (bool sleeping){
-        //   return sleeping ? "is now sleeping" : "is awake now";
-        // }
         private string _nickname = null;
         public string nickname{
             get{
@@ -37,8 +33,6 @@ namespace Zoolandia
                 }
             }
         }
-        // public string food{ get; set; }
-        // public string sleepWay{ get; set; }
         public int legs{ get; set; }
         private int _weighs;
         public int weighs{
@@ -54,11 +48,16 @@ namespace Zoolandia
         }
         public virtual void sleepWay() {}
         public virtual void food() {}
-        public string legCount(string nickname) {
-            return ($"{nickname} Has 4 number of legs");
-        }
-        public void legCount(string nickname, int legs) {
-            Console.WriteLine($"{nickname} Has {legs} number of legs");
+        // public string legCount( int legs) {
+        //     return ($"{nickname} Has 4 number of legs");
+        // }
+        public string legCount(int legs) {
+            if(legs != 0) {
+              return ($"Has {this.legs} number of legs");
+            }
+            else {
+                return ($"It seems like it has no legs atall!");
+            }
         }
         
     }
